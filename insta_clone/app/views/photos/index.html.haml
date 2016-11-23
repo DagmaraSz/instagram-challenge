@@ -1,0 +1,6 @@
+- if @photos.any?
+  - @photos.each do |photo|
+    %h2= photo.placeholder
+- else
+  No photos yet
+= button_to "Add", new_photo_path, method: :get
